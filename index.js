@@ -60,16 +60,16 @@ function copyText() {
 }
 
 function validateText() {
-  let text = document.querySelector('.input-text').value;
-  let validator = text.match(/^[a-z]*$/);
+  const inputText = document.querySelector('.input-text').value;
+  const regex = new RegExp(/^[a-z ]*$/);
 
-  if (text === '') {
+  if (inputText === '') {
     alert('Ingresa algún texto')
     location.reload();
     return true;
   }
 
-  if(!validator || validator === 0) {
+  if(!inputText.match(regex)) {
     alert('Solo son permitidas letras minúsculas y sin acentos')
     location.reload();
     return true;
