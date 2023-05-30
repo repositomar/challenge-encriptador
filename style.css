@@ -1,0 +1,152 @@
+* {
+    background: #0d9e7a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;}
+
+.logo {
+    height: 58px;
+    margin: 20px 0 0 30px;
+}
+
+main {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.input-text {
+    background: #0d9e7a;
+    border: none;
+    color: #0A3871;
+    height: 400px;
+    margin-top: 30px;
+    /* margin: 48px 0 0 130px; */
+    padding: 2px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.information-box {
+    /* margin: 10px 0 0 185px; */
+    align-items: center;
+    /* position: absolute; */
+    /* width: 500px; */
+    height: 18px;
+    display: flex;
+    gap: 8px;
+}
+
+.information-box img{
+    width: 18px;
+    height: 18px;
+}
+
+.information-box p {
+    display: inline-block;
+    font-size: 16px;
+    height: 100%;
+    width: 270px;
+    line-height: 150%;
+}
+
+.button-box {
+    display: flex;
+    gap: 24px;
+    height: 60px;
+    /* margin: 16px 0 0 200px; */
+    margin-top: 18px;
+    width: 680px;
+}
+
+.btn-encode {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 22px;
+    height: 100%;
+    width: 320px;
+}
+
+.btn-decode {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 22px;
+    height: 100%;
+    width: 320px;
+}
+
+.output-text {
+    background: #D8DFE8;
+    background-image: url(./images/Doll.svg);
+    background-repeat: no-repeat;
+    border: 1px solid #0A3871;
+    border-radius: 32px;
+    color: #0A3871;
+    height: 540px;
+    margin-left: 98px;
+    /* margin-top: 20px; */
+    /* padding-left: 20px;s */
+    position: fixed;
+}
+
+.output-text:focus{
+    outline: none;
+}
+
+.btn-copy {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    font-size: 22px;
+    margin-left: 106px;
+    margin-top: 472px;
+    position: absolute;
+    width: 320px;
+}
+
+
+/* .image-doll {
+    width: 260px;
+    margin: 20% auto;
+    display: block;
+} */
+
+.found-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 18px;
+}
+
+footer {
+    margin: 20px 0 0 200px;
+}
+
+@media screen and (max-width:480px) {
+    .button-box {
+        width: auto;
+    }
+}
