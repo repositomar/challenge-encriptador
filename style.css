@@ -13,7 +13,7 @@
 main {
     display: flex;
     margin-bottom: 10px;
-    margin-left: 180px;
+    margin-left: 100px;
 }
 
 .input-text {
@@ -107,9 +107,9 @@ main {
     border: 1px solid #0A3871;
     border-radius: 18px;
     color: #0A3871;
-    height: 540px;
+    height: 530px;
     margin-left: 98px;
-    position: fixed;
+    position: absolute;
     text-align: center;
 }
 
@@ -143,7 +143,7 @@ main {
     margin-left: 130px;
     font-weight: bold;
     font-size: 22px;
-    position: fixed;
+    position: absolute;
     background: #D8DFE8;    
 }
 
@@ -153,17 +153,27 @@ main {
     margin-left: 130px;
     font-size: 20px;
     width: 310px;
-    position: fixed;
+    position: absolute;
     background: #D8DFE8; 
 }
 
-/* footer {
+footer {
+    margin-top: 30px;
+    background: black;
+    height: 100px;
+}
+
+.footer-text p{
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 40px;
+    color: #D8DFE8;
     position: absolute;
-    margin-top: 500PX;
-} */
+    font-size: 28px;
+}
 
 
-/* @media screen and (max-width:1366px) {
+/* @media screen and (max-width:700px) {
     .logo {
         height: 58px;
         margin-top: 50px;
@@ -266,6 +276,10 @@ main {
         height: 60px;
         margin-top: -80px;
         width: 240px; 
+    }
+
+    footer {
+        width: 390px;
     }
     
 }
