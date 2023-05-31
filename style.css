@@ -137,21 +137,24 @@ main {
     transform: scale(0.9);
 }
 
-.help-box {
+.help-message {
+    text-align: center;
     margin-top: 350px;
-    display: flex;
-}
-
-.found-message {
+    margin-left: 130px;
     font-weight: bold;
     font-size: 22px;
     position: fixed;
+    background: #D8DFE8;    
 }
 
-.instructions {
-    font-weight: bold;
-    font-size: 18px;
+.help-message-instructions {
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 130px;
+    font-size: 20px;
+    width: 310px;
     position: fixed;
+    background: #D8DFE8; 
 }
 
 /* footer {

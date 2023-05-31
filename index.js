@@ -1,6 +1,8 @@
 const inputText = document.querySelector('.input-text');
 const outputText = document.querySelector('.output-text');
 const buttonCopy = document.querySelector('.btn-copy')
+const helpMessage = document.querySelector('.help-message')
+const helpMessageInstructions = document.querySelector('.help-message-instructions')
 buttonCopy.style.display = 'none'
 const STRINGVALUES = {
   'e': 'enter',
@@ -15,6 +17,8 @@ function encodeText() {
     const stringEncode = encode(inputText.value).toLowerCase();
     outputText.value = stringEncode;
     outputText.style.backgroundImage = 'none';
+    helpMessage.style.display = 'none';
+    helpMessageInstructions.style.display = 'none';
     inputText.value = '';
     buttonCopy.style.display = 'block';
   }
@@ -60,7 +64,7 @@ function copyText() {
 }
 
 function validateText() {
-  const inputText = document.querySelector('.input-text').value;
+  const inputText = document.querySelector('.input-text').value.toLowerCase();
   const regex = new RegExp(/^[a-z ]*$/);
 
   if (inputText === '') {
