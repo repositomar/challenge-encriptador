@@ -28,6 +28,8 @@ function decodeText() {
   const stringDecode = decode(inputText.value).toLowerCase();
   outputText.value = stringDecode;
   outputText.style.backgroundImage = 'none';
+  helpMessage.style.display = 'none';
+  helpMessageInstructions.style.display = 'none';
   inputText.value = '';
   buttonCopy.style.display = 'block';
 }

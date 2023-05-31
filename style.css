@@ -105,12 +105,13 @@ main {
     background-position-y: 40px;
     background-repeat: no-repeat;
     border: 1px solid #0A3871;
-    border-radius: 18px;
+    border-radius: 24px;
     color: #0A3871;
-    height: 530px;
-    margin-left: 98px;
+    height: 500px;
+    margin-left: 40px;
+    padding: 20px;
     position: absolute;
-    text-align: center;
+    width: 450px;
 }
 
 .output-text:focus{
@@ -172,8 +173,9 @@ footer p{
 }
 
 
-/* @media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .logo {
+        margin-left: auto;
         height: 58px;
         margin-top: 50px;
     }
@@ -185,24 +187,39 @@ footer p{
     }
 
     .input-text {
-        margin-left: 66px;
-        height: 300px;
+        margin-left: 36px;
+        height: 400px;
+        width: 640px;
     }
 
     .information-box {
-        margin-left: 66px;
+        margin-left: 36px;
     }
 
     .button-box {
-        width: 480px;
-        margin-left: 66px;
+        width: auto;
+        margin-left: 36px;
         margin-bottom: 30px;
     }
 
-    .output-text {
-        margin-left: 120px;
+    .btn-encode {
+        height: 6 0px;
+        margin-bottom: 20px;
+        width: 308px;
     }
-} */
+
+    .btn-decode {
+        height: 60px;
+        width: 308px;
+    }
+
+    .output-text {
+        background-image: none;
+        margin-left: 36px;
+        width: 600px;
+        height: 200px;
+    }
+}
 
 
 @media screen and (max-width:480px) {
@@ -246,14 +263,13 @@ footer p{
     }
 
     .output-text {
-        align-items: end;
         background-size: 60%;
         background-position-y: 30px;
         height: 330px;
         margin-left: 36px;
         margin-top: -46px;
         position: relative;
-        width: 314px;
+        width: 276px;
     }
 
     .btn-copy {
